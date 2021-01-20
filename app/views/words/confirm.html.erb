@@ -1,0 +1,7 @@
+<h3>この内容でよろしいですか</h3>
+<%= form_with(model: @word, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+  <p><%= @word.content %></p>
+  <%= form.submit  "つぶやく" %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>
