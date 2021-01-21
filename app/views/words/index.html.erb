@@ -2,14 +2,14 @@
 <h1>つぶやき一覧</h1>
 <p><%= notice %></p>
 <%= link_to 'つぶやく', new_word_path, class: "btn btn-primary" %>
+<table class="color">
 <% @words.each do |word| %>
-<table class="backcolor">
   <tr>
     <td class="content"><%= word.content %></td>
     <td><%= link_to "詳細", word_path(word.id), class: "btn btn-primary " %></td>
     <td><%= link_to "編集", edit_word_path(word.id), class: "btn btn-primary" %></td>
-    <td><%= link_to "削除", word_path(word.id), method: :delete, class: "btn btn-primary" %></td>
+    <td><%= link_to "削除", word_path(word.id), method: :delete, data: {confirm: '削除してもよろしいですか？'}, class: "btn btn-primary" %></td>
   </tr>
+<% end %>
 </table>
- <% end %>
- <%= render 'br' %>
+<%= render 'br' %>
