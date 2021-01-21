@@ -4,20 +4,18 @@
     <title>Tweetapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-      <header>
-        <p>Tweetapp</p>
-      </header>
-          <div class="container">
-            <%= yield %>
-          </div>  
-      <footer>
-        <p>DIVE INTO CODE</p>
-      </footer>
+    <header>
+      <p>Tweetapp</p>
+    </header>
+        <div class="container">
+          <%= yield %>
+        </div>  
+    <footer>
+      <p>DIVE INTO CODE</p>
+    </footer>
   </body>
 </html>
