@@ -1,13 +1,15 @@
+<%= render 'br' %>
 <h1>つぶやき一覧</h1>
 <p><%= notice %></p>
-<% @words.each do |word| %> 
-<table>
+<%= link_to 'つぶやく', new_word_path, class: "btn btn-primary" %>
+<% @words.each do |word| %>
+<table class="backcolor">
   <tr>
-    <td><%= word.content %></td>
-    <td><%= link_to "詳細", word_path(word.id) %></td>
-    <td><%= link_to "編集", edit_word_path(word.id) %></td>
-    <td><%= link_to "削除", word_path(word.id), method: :delete %></td>
+    <td class="content"><%= word.content %></td>
+    <td><%= link_to "詳細", word_path(word.id), class: "btn btn-primary " %></td>
+    <td><%= link_to "編集", edit_word_path(word.id), class: "btn btn-primary" %></td>
+    <td><%= link_to "削除", word_path(word.id), method: :delete, class: "btn btn-primary" %></td>
   </tr>
-<% end %>
 </table>
-<%= link_to '新しくブログを投稿する', new_word_path %>
+ <% end %>
+ <%= render 'br' %>

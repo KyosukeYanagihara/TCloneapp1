@@ -1,3 +1,4 @@
+<%= render 'br' %>
 <%= form_with( model: @word, local: true ,url: confirm_words_path ) do |form| %>
 <% if @word.errors.any? %>
         <div id="error_explanation">
@@ -13,6 +14,6 @@
     <%= form.label :content %>
     <%= form.text_field :content %>
   </div>
-  <%= form.submit "確認" %>
+  <%= form.submit "確認", class: "btn btn-primary" %>
 <% end %>
-<%= link_to "一覧にもどる", words_path %>
+<%= link_to "一覧にもどる", words_path, class: "btn btn-primary" %>

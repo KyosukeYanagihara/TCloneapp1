@@ -1,5 +1,8 @@
 class WordsController < ApplicationController
   before_action :set_word, only: [:show, :edit, :update, :destroy]
+  def top
+    
+  end
   def index
     @words = Word.all
   end
@@ -23,7 +26,7 @@ class WordsController < ApplicationController
 
   def show
   end
-
+  
   def edit
   end
 
