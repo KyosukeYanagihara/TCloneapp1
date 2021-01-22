@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 500px;
+}
+
+.color {
+  color: aliceblue;
+  border-radius: 5px;
+  background-color: rgba(54, 89, 194, 0.61);
+}
+
+.top-font-size {
+  font-size: 3rem;
+  margin-bottom: 70px;
+}
+/*# sourceMappingURL=word.css.map */

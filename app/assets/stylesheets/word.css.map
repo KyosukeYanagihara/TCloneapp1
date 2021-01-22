@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAEb;;AAID,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,SAAS;EAChB,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,uBAAuB;CAC5C;;AAED,AAAA,cAAc,CAAC;EACX,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "word.scss"
+    ],
+    "names": [],
+    "file": "word.css"
+}
